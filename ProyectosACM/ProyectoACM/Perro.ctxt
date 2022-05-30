@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Perro
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Perro\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=int\ edadHumana()
+comment2.params=tipoComida
+comment2.target=void\ alimentar(int)
+comment3.params=
+comment3.target=java.lang.String\ interactuar()
+comment4.params=
+comment4.target=void\ imprimeInformacion()
+comment5.params=
+comment5.target=Perro()
+comment5.text=\r\n\ Constructor\ for\ objects\ of\ class\ Perro\r\n
+comment6.params=y
+comment6.target=int\ sampleMethod(int)
+comment6.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+numComments=7
