@@ -72,6 +72,8 @@ public class MaquinaDeBoletos
 
     
     /* Asignar el precio al boleto
+     * Ejercicio 2.30
+     */
        */
       
       public void asignarPrecioBoleto(int precio1)
