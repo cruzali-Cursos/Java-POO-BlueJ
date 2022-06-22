@@ -1,16 +1,16 @@
 #BlueJ package file
 package.editor.height=463
 package.editor.width=750
-package.editor.x=662
-package.editor.y=273
+package.editor.x=742
+package.editor.y=47
 package.numDependencies=0
 package.numTargets=1
 package.showExtends=true
 package.showUses=true
 target1.editor.height=608
 target1.editor.width=916
-target1.editor.x=180
-target1.editor.y=19
+target1.editor.x=2
+target1.editor.y=22
 target1.height=70
 target1.name=MaquinaDeBoletos
 target1.showInterface=false

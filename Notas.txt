@@ -1,4 +1,158 @@
- 2.6 Metodos de Acceso
 
- 2.7 Metodos de Modificacion
- 
+CAPÍTULO 1: Objetos y clases
+
+        
+        1.1 Objetos y clases
+            Los objetos se crean a partir de clases.
+            Los objetos pueden ser ornagizados en categorías, y la clase describe en forma abstracta todos los objetos de un tipo particular.
+            Los objetos representan casos individuales de una clase.
+            A los objetos particulares se les llama instancia. Por ejemplo la clase auto, el objeto particular es mi auto, entonces se puede decir que mi auto es una instancia de la clase auto.
+
+    
+        1.2 Crear objetos
+            Se crean a partir de una clase. Se instancía la clase.
+            El nombre de la clase debe comenzar con la primer letra en mayuscula.
+
+
+        1.3 Invocar métodos
+            A travéz del llamado a sus métodos de cada objeto es como podemos comunicarnos con ellos (llamados o invocados)
+
+        1.4 Parámetros
+            Los métodos pueden contener parámetros para proporcionar información adicional al realizar una tarea.
+            El método indica el tipo de parametro que requiere, por ejemplo: void moverHorizontal(int distancia) <- esta línea se denomina "signatura".
+            Pueden existir varios parametros en un metodo.
+
+        1.5 Tipos de datos
+            Los parámetros tienen tipos de datos y el tipo de dato define la clase de valor que un parámetro puede tomar.
+
+        1.6 Instancias múltiples
+            Se pueden crear múltiples objetos/instancias similares a partir de una sola clase.
+            Cada isntancia puede tener un estado independiente a las demas instancias.
+
+        1.7 Estado
+            Los objetos tienen un estado el cual es representado por los valores almacenados en sus campos.
+            En java a los atributos de un objeto se les llama campos.
+
+        1.8 Que es un objeto
+            Los objetos de una misma clase tienen campos identicos en tipo de dato, nombre de campo y numero de campos ya que pertenecen a la misma clase.
+            En cambio objetos de clases diferentes tienen diferentes campos con diferentes tipos de datos.
+            Los campos se definen en la clase y no en el objeto.
+            Los valores de los campos SI se almacenan en el objeto/instancia.
+            Es la misma historia para los métodos, ya que estos se definen en la clase por lo que todos los objetos de una misma clase tienen los mismos métodos. 
+            Los métodos se invocan desde los objetos por eso al invocar el mismo objeto desde diferentes instancias el resultado puede ser diferente de acuerdo al estado de la instancia.
+
+
+        1.9 Interaccion entre objetos
+            Los objetos se pueden comunicar entre ellos invocando los metodos de los otros objetos.
+            Generalmente al desarrollar creamos un objeto que se inicializa y éste a su vez se encarga de crear otros objetos de forma directa o indirectamente.
+
+        1.10 Código fuente
+            Determina la estructura (campos) y el comportamiento (metodos) de de cada uno de los objetos de dicha clase.
+
+        1.11 Otro ejemplo
+
+
+        1.12 Valores de retorno
+            Los métodos pueden devolver información de algun objeto mediante un valor de retorno.
+            Se suelen usar para investigar el estado de un objeto.
+
+        1.13 Objetos como parámetros
+            Cuando se pasa como parámetro un objeto a un método se especifica el nombre de la clase de ese objeto como tipo de parámetro en la signatura de dicho método.
+                void inscribirEstudiante(Estudiante nuevoEstudiante)
+
+
+        1.14 Resumen
+
+
+
+
+CAPITULO 2: Comprender las definiciones de clases 
+
+    2.1 Maquina expendedora de boletos
+        Uso básico solo a forma de práctica para conocer conceptos necesarios para los siguientes temas
+
+    2.2 Examinar una definición de clase
+        Codigo fuente mostrado para ver la definición de una clase con sus campos y métodos.
+
+    2.3 Campos, constructores y métodos
+        En la parte interna de una clase es en donde se definen sus campos, metodos y constructores, éstos dan a los objetos sus características particulares.
+        Los campos almacenan datos para que cada objelo los use.
+        Los constructores permiten que cada objeto se prepare adecuadamente cuando es creado.
+        Los métodos implementan el comportamiento de los objetos.
+        Los constructores NUNCA tienen tipo de retorno, ni siquiera con void
+
+            2.3.1 Campos
+                Almacenan datos para que luego los use un objeto. También son llamados variables de instancia.
+                Es un espacio disponible asignado a cada objeto al momento de ser creado. Aqui se alojan cada campo declarado en su clase.
+                Su alcance se limita a la clase que lo declara, puede ser accedido desde cualquier lugar de la misma clase.
+
+            2.3.2 Constructores
+                Permiten que cada objeto sea preparado adecuadamente cuando es creado.
+                Su responsabilidad es poner un poner un objeto en un estado para poder ser usado una vez construido.
+                Al declararlos, usan el mismo nombre que la clase.
+
+                En java todos los campos se inicializan con un valor por defecto, si no se inicializan explicitamente,  de acuerdo al tipo de dato y a la visibilidad del campo. Para los campos enteros es 0. Siempre es mejor definir el valor explicitamente.
+
+
+    2.4 Pasar datos mediante parámetros
+        Los métodos y los constructores reciben valores mediante sus parámetros. 
+        El constructor suele recibir datos de otra fuente (por ejemplo el usuario, luego este valor recibido lo asigna a algun campo del objeto), este espacio se llama - Espacio del constructor del objeto / Espacio del método.
+        Se debe distinguir entre el nombre del parametro dentro del constructor / método y valores de los parámetros fuera del constructor / metodo.
+        Se hace referencia a los nombres como parametros formales (realmente son otra clase de variables puesto que permiten almacenar valores) y a los valores como parametros actuales.
+            declaracion:
+                public MaquinaDeBoletos(int precioDelBoleto) 
+
+            invocacion:
+                MaquinaDeBoletos(500)
+
+            precioDelBoleto -> Parametro formal : Su alcance solo disponible dentro del metodo / constructor que lo declara.
+            500 -> parametro actual
+
+
+        Alcance de la variable / Tiempo de vida de la variable
+            Estos conceptos se relacionan. 
+            El tiempo de vida de un parámetro se limita a una sola llamada de un constructor o método. Despupes de completarse la tarea de un constructor o metodo los parametros formales desaparecen ya que se elimina el espacio del constructor / método.
+
+            El tiempo de vida de un campo dura mientras dura el objeto que lo contiene. Por eso los parámetros del constructor / método se guardan en los campos que son mas persistentes.
+
+
+    2.5 Asignación
+        Pasar el valor del lado derecho a la variable del lado izquierdo, se asigna su valor. Deben ser del mismo tipo para poder realizarse la asignación.
+
+            precio = precioDelBoleto;
+
+        A la parte de la derecha se le llama expresión, y las evalua la computadora.
+
+
+     2.6 Metodos de Acceso
+        Métodos que accesan a los campos de una clase para retornar un valor.
+        Por ejemplo getPrecio()
+
+     2.7 Metodos de Modificacion
+        Métodos que mofidican el estado de un objeto, pasando de un estado A antes del llamado al método a un estado B después del llamado al método modificador.
+        Por ejemplo setPrecio(3.5)
+
+    2.8 Imprimir desde métodos - Pag 35
+        println
+        Concatenación de cadenas.
+
+    2.9 Resumen de la máquina de boletos simplificada
+        Resumen de los metodos y campos de la maquina de boletos simplificada.
+
+    2.10 Reflexión sobre el diseño de la maquina de boletos
+        La maquina de boletos por ahora es muy básica y carece de mecanismos de supervisión para evitar fallos 
+
+    2.11 Hacer elecciones: la sentencia condicional
+        Máquina de boletos más sofisticada
+        Una sentencia condicional realiza una de dos acciones posibles, sabandose en el resultado de una prueba (evaluación de una expresion)
+        Una expresion booleana solo tiene dos posibles valores. 
+        La sentencia condicional hace uso de esos dos posibles valores para elegir entre dos acciones diferentes.
+
+
+
+    2.12 
+
+
+
+
+     

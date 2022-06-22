@@ -27,6 +27,33 @@ public class MaquinaDeBoletos
         saldo = 0;
         total = 0;
     }
+    
+    
+    /*
+     * Segundo constructor, asigna el precio de forma predeterminada.
+     
+     * Ejercicio 2.42
+     */
+    
+    public MaquinaDeBoletos() {
+        precio = 500;
+        saldo = 0;
+        total = 0;
+    }
+    
+    /*
+     * Ejercicio 2.33
+     */
+    public void mensaje() {
+        System.out.println("Por favor, ingrese la cantidad de dinero correcta");
+    }
+    
+    /*
+     * Ejercicio 2.34
+     */
+    public void mostrarPrecio() {
+        System.out.println("El precio del boleto es de " + precio + " ctvos.");
+    }
 
     /**
      * Retorna el precio de un boleto.
@@ -59,7 +86,7 @@ public class MaquinaDeBoletos
      */
  public void insertarDinero(int cantidad)
     {
-        if(cantidad > 0) {
+        if(cantidad >= 0) {
             saldo = saldo + cantidad;
         }
         else {
@@ -73,7 +100,7 @@ public class MaquinaDeBoletos
     
     /* Asignar el precio al boleto
      * Ejercicio 2.30
-     */
+     * Ejercicio 2.41
        */
       
       public void asignarPrecioBoleto(int precio1)
@@ -113,6 +140,7 @@ public class MaquinaDeBoletos
     /**
      * Da el vuelto del dinero ingresado cuando es superior al precio
      * El saldo se pone a cero
+     * Dinero devuelto al cliente, sobrante resultante después de imprimir los boletos necesarios
      */
     public int reintegrarSaldo()
     {
@@ -124,15 +152,10 @@ public class MaquinaDeBoletos
     
     /** 
      * Retira el saldo total recaudado por la maquina
-     * pone a cero el total
+     * pone a cero el total Ejercicio 2.40
      */
-    public int vaciarMaquina()
-    
-    { 
-        int saldoTotal;
-        saldoTotal=total;
-        total=0;
-        return saldoTotal;
+    public void vaciarMaquina()    
+    {   total=0;
     }
 
 }
