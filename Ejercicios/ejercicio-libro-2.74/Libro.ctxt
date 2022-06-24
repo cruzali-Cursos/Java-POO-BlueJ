@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=autorDelLibro\ tituloDelLibro
+comment0.target=Libro(String,\ String)
+comment0.text=\nConstructor\ for\ objects\ of\ class\ Libro\n\n
+comment1.target=String\ getAutor()
+comment2.target=String\ getTitulo()
+numComments=3

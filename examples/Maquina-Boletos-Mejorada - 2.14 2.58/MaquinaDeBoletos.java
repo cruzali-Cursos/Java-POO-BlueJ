@@ -17,16 +17,21 @@ public class MaquinaDeBoletos
     private int saldo;
     // El total de dinero recolectado por ésta máquina.
     private int total;
+    
+ 
 
     /**
      * Crea una máquina que suministra boletos de un precio dado..
+     * Ejercicio 2.58
      */
-    public MaquinaDeBoletos(int precioDelBoleto)
+    public MaquinaDeBoletos(int precio1)
     {
-        precio = precioDelBoleto;
+        precio = precio1;
         saldo = 0;
         total = 0;
-    }
+        System.out.println("Se selecciono el boleto con precio de " + precio);
+    }   
+
     
     
     /*
@@ -35,11 +40,7 @@ public class MaquinaDeBoletos
      * Ejercicio 2.42
      */
     
-    public MaquinaDeBoletos() {
-        precio = 500;
-        saldo = 0;
-        total = 0;
-    }
+/*
     
     /*
      * Ejercicio 2.33

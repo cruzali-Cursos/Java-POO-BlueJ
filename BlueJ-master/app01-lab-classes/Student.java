@@ -25,6 +25,10 @@ public class Student
      */
     public Student(String fullName, String studentID)
     {
+        if (fullName.length() < 4 || studentID.length() < 3) {
+            System.out.println("Error: Debe capturar un nombre de 4 caracteres o mas y un id estudiante de 3 digitos o mas");
+        }
+        
         name = fullName;
         id = studentID;
         credits = 0;
@@ -78,7 +82,11 @@ public class Student
      */
     public String getLoginName()
     {
-        return name.substring(0,4) + id.substring(0,3);
+        if (name.length() < 4 && id.length() < 3) {
+            return name + id;
+        } else {
+            return name.substring(0,4) + id.substring(0,3);
+        }
     }
     
     /**

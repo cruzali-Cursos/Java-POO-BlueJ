@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.params=precio1
+comment0.target=MaquinaDeBoletos(int)
+comment0.text=\nCrea\ una\ m\u00C3\u00A1quina\ que\ suministra\ boletos\ de\ un\ precio\ dado..\nEjercicio\ 2.58\n\n
+comment1.target=void\ mensaje()
+comment1.text=\n/*\nEjercicio\ 2.33\n\n
+comment10.target=int\ vaciarMaquina()
+comment10.text=\nRetira\ el\ saldo\ total\ recaudado\ por\ la\ maquina\npone\ a\ cero\ el\ total\ Ejercicio\ 2.40\nEjercicio\ 2.55\ /\ poner\ a\ cero\ despu\u00E9s\ de\ retornar\ el\ total\n\n
+comment2.target=void\ mostrarPrecio()
+comment2.text=Ejercicio\ 2.34\n\n
+comment3.target=int\ getPrecio()
+comment3.text=\nRetorna\ el\ precio\ de\ un\ boleto.\n\n
+comment4.target=int\ getSaldo()
+comment4.text=\nRetorna\ la\ cantidad\ de\ dinero\ ya\ insertada\ para\ el\nsiguiente\ boleto\n\n
+comment5.target=int\ getTotal()
+comment5.text=\nRetorna\ la\ cantidad\ de\ dinero\ que\ va\ acumulando\ la\ maquina\ de\ boletos\n\n
+comment6.params=cantidad
+comment6.target=void\ insertarDinero(int)
+comment6.text=\nRecibe\ del\ usuario\ una\ cantidad\ de\ dinero\ en\ centavos.\ \nControla\ que\ la\ cantidad\ tenga\ sentido.\n\n
+comment7.params=precio1
+comment7.target=void\ asignarPrecioBoleto(int)
+comment7.text=Asignar\ el\ precio\ al\ boleto\nEjercicio\ 2.30\nEjercicio\ 2.41\n\n
+comment8.target=void\ imprimirBoleto()
+comment8.text=\nImprime\ un\ boleto\ si\ la\ cantidad\ de\ dinero\ ingresada\nalcanza\ y\ disminuye\ el\ saldo\ actual\ en\ el\ precio\ del\nboleto.\ Imprime\ un\ mensaje\ de\ error\ si\ se\ requiere\ m\u00C3\u00A1s\ndinero.\nEjercicio\ 2.57\n\n
+comment9.target=int\ reintegrarSaldo()
+comment9.text=\nDa\ el\ vuelto\ del\ dinero\ ingresado\ cuando\ es\ superior\ al\ precio\nEl\ saldo\ se\ pone\ a\ cero\nDinero\ devuelto\ al\ cliente,\ sobrante\ resultante\ despu\u00E9s\ de\ imprimir\ los\ boletos\ necesarios\n\n
+numComments=11

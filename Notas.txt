@@ -150,7 +150,55 @@ CAPITULO 2: Comprender las definiciones de clases
 
 
 
-    2.12 
+    2.12 Un ejemplo más avanzado de sentencia condicional
+        Al validar una sentencia condicional se siguen uno de dos posibles caminos, en donde cada uno de ellos puede contener un conjunto de sentencias.
+
+
+    2.13 Variables locales
+        Es una variable que se declara y se usa dentro de un solo metodo / constructor, su alcance y tiempo de vida se limita a la de su metodo.
+        Se declaran dentro de un método / constructor, no llevan private o public.
+        Su tiempo de vida es igual al tiempo de la ejecución del método / constructor.
+        Se crean cuando se invoca un metodo y se destruyen cuando el metodo / constructor termina.
+        Se suelen usar para guardar temporalmente un valor.
+        Una variable local del mismo nombre que un campo evita que éste sea accedido o modificado dentro del método.
+
+
+    2.14 Campos, parametros y variables locales
+        Las tres clases de variables pueden almacenar un valor de acuerdo a su tipo.
+        Los campos se definen fuera del constructor y metodos.
+        Las variables locales se definen dentro de un metodo / constructor.
+        Las variables locales no pueden ser accedidas desde fuera del metodo / constructor que las declara.
+        Las variables locales deben ser inicializadas, ya que no cuentan con un valor por defecto.
+        Los campos pueden ser accedidos desde cualquier método / constructor de la clase.
+        Los campos no pueden ser accedidos desde otras clases mientras sean privadas.
+        Los campos se usan para almacenar información que persiste durante la vida del objeto.
+        Los parametros solo existen (viven) durante la ejecución del metodo / constructor, luego su espacio es destruido.
+        Los parametros formales y las variables locales son de persistencia corta, solo viven durante la ejecucion del metodo / constructor por lo que sus valores se pierden entre llamadas. Por eso se dice que actuan solo como almacenamiento temporal.
+        Los parametros formales se definen en el encabezado del constructor / metodo, reciben valores del exterior y asi se inicializan con los parametros actuales que forman parte de la llamada al metodo / constructor.
+
+
+
+    2.15 Resumen de la maquina de boletos mejorada
+        Las sentencias condicionales posibilitan seguir uno de dos caminos al evaluar su expresion.
+        Las variables locales viven tanto como la ejecución del metodo / constructor.
+
+
+    2.16 Ejercicios de revision
+        Tipos de retorno.
+        Tipos de parametro.
+        Declarar una nueva clase.
+        Declarar campos con su tipo de dato.
+        Declarar constructores.
+
+    2.17 Revisar un ejemplo familiar:
+        Revision clase Student
+        Uso de el método substring de la clase String.
+        Uso del método length() de la clase String.
+        if para validar longitud de campos.
+
+    2.18 Resumen
+        
+
 
 
 
