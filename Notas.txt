@@ -197,6 +197,30 @@ CAPITULO 2: Comprender las definiciones de clases
         if para validar longitud de campos.
 
     2.18 Resumen
+        Todo lo visto en este capítulo
+            Constructores
+            Métodos
+            Variables locales
+            Campos - Variables de instancia
+            Expresion boleana
+            Condicional
+            if
+            Signatura del método
+            Declaracion de clase
+            Alcance de variables / Visibilidad
+            Tipos de datos de retorno
+            Void
+            Sentencias
+            Parametros
+            Metodos de Acceso / Modificacion
+            return
+            Tiempo de vida
+
+        ejercicio-libro
+
+    
+
+
         
 
 

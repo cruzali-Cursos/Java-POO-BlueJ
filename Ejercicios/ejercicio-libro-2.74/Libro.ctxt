@@ -1,7 +1,15 @@
 #BlueJ class context
-comment0.params=autorDelLibro\ tituloDelLibro
-comment0.target=Libro(String,\ String)
+comment0.params=autorDelLibro\ tituloDelLibro\ paginasDelLibro\ numeroDeReferenciaDelLibro
+comment0.target=Libro(String,\ String,\ int,\ String)
 comment0.text=\nConstructor\ for\ objects\ of\ class\ Libro\n\n
-comment1.target=String\ getAutor()
-comment2.target=String\ getTitulo()
-numComments=3
+comment1.params=ref
+comment1.target=void\ setNumeroDeReferencia(String)
+comment2.target=void\ getNumeroDeReferencia()
+comment3.target=String\ getAutor()
+comment4.target=String\ getTitulo()
+comment5.target=int\ getPaginas()
+comment6.target=void\ imprimirAutor()
+comment7.target=void\ imprimirLibro()
+comment8.target=void\ imprimePaginas()
+comment9.target=void\ imprimirDetalles()
+numComments=10
