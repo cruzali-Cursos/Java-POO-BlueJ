@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Calentador()
+comment0.text=\nConstructor\ for\ objects\ of\ class\ Calentador\n\n
+comment1.target=void\ calentar()
+comment2.target=void\ engriar()
+comment3.target=int\ getTemperatura()
+numComments=4

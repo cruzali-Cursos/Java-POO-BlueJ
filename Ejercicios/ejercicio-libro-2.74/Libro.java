@@ -12,6 +12,7 @@ public class Libro
     private String titulo;
     private int paginas;
     private String numeroDeReferencia;
+    private int prestado;
 
     /**
      * Constructor for objects of class Libro
@@ -21,12 +22,30 @@ public class Libro
         autor = autorDelLibro;
         titulo = tituloDelLibro;
         paginas = paginasDelLibro;
-        numeroDeReferencia = numeroDeReferenciaDelLibro;
+        
+        if (numeroDeReferenciaDelLibro.length() == 0)
+            numeroDeReferencia = "";
+        else 
+            numeroDeReferencia = numeroDeReferenciaDelLibro;
+    }
+    
+    public void prestar()
+    {
+        prestado = prestado + 1;
+    }
+    
+    public int getPrestado()
+    {
+        return prestado;
     }
     
     public void setNumeroDeReferencia(String ref)
     {
-        numeroDeReferencia = ref;
+        if (ref.length() >= 3) {
+            numeroDeReferencia = ref;
+        } else {
+            System.out.print("\nEl numero de referencia proporcionado debe ser de 3 o mas digitos");
+        }
     }
     
     public void getNumeroDeReferencia()
@@ -64,7 +83,12 @@ public class Libro
     
     public void imprimirDetalles()
     {
-        System.out.print("\nDetalles del libro ::: \nAutor: " + autor + "\nTitulo: " + titulo + "\nPaginas: " + paginas);
+        if (numeroDeReferencia.length() >= 3) {
+            System.out.print("\nDetalles del libro ::: \nAutor: " + autor + "\nTitulo: " + titulo + "\nPaginas: " + paginas + "\nReferencia: " + numeroDeReferencia + "\nVeces prestado: " + prestado);
+        } else {
+            System.out.print("\nDetalles del libro ::: \nAutor: " + autor + "\nTitulo: " + titulo + "\nPaginas: " + paginas + "\nReferencia: ZZZ" + "\nVeces prestado: " + prestado);
+        }
+        
     }
   
 }
