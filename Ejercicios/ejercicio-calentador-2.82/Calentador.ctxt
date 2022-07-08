@@ -1,7 +1,10 @@
 #BlueJ class context
-comment0.target=Calentador()
+comment0.params=miMin\ miMax
+comment0.target=Calentador(int,\ int)
 comment0.text=\nConstructor\ for\ objects\ of\ class\ Calentador\n\n
 comment1.target=void\ calentar()
-comment2.target=void\ engriar()
+comment2.target=void\ enfriar()
 comment3.target=int\ getTemperatura()
-numComments=4
+comment4.params=miIncremento
+comment4.target=void\ setIncremento(int)
+numComments=5

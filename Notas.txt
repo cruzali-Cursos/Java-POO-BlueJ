@@ -221,10 +221,34 @@ CAPITULO 2: Comprender las definiciones de clases
     
 
 
-        
+CAPITULO 3: Interacción de objetos.
+    Los objetos deberían trabajar entre ellos cooperando con tareas individuales.
 
 
+    3.1 El ejemplo reloj
+        Reloj tipo Europeo.
+
+    3.2 Abstraccion y Modularizacion
+        Abstraccion: Habilidad de ignorar los detalles y centrar la atención en un nivel mas alto del problema.
+        Cuando un problema se agranda es más dificil mantener todos los detalles al mismo tiempo.
+        Si existe un problema grande y dificil de manejar se recomienda dividir el problema en partes pequeñas para que sea facil de tratar.
+        Problemas en sub-problemas y así susecivamente hasta que sean suficientemente faciles de tratar. Así cada solución al pequeño prblema evita pensar en los detalles y esta solución se usa como un bloque de construcción para complementar a un sistema mas grande. Esta tecnica se le conoce como "divide y reinaras".
+
+        Modularizacion: Es el proceso de dividir un todo en partes bien definidas que pueden ser construidas y examinadas por separado.
+
+        Se debe usar modularización y abstracción de forma responsable de acuerdo a cada proyecto. Estos conceptos se complementan mutuamente. 
 
 
+    3.3 Abstraccion en software
+        Identificar componentes que se pueden programar como entidades independientes y luego usar esos componentes como si fueran partes simples sin tener encuenta su complejidad.
+        En POO los componentes y subcomponentes son objetos.
 
-     
+
+    3.4 Modularizacion en el ejemplo reloj
+        Se trata de dividir el problema, con la ayuda de la abstracción, de cierta forma en donde se logre identificar cada subproblema y éste a su vez alcance un nivel de independencia por si solo para solucionar un subproblema. De esta forma cada modulo identificado se adhiere a los demás módulos para lograr una solución.
+
+    3.5 Implementación del visor del reloj.
+        Una clase define tipos, esto quiere decir que el nombre de una clase puede ser usado para definir el tipo de una variable y estas variables que son de un tipo de clase pueden almacenar objetos de dicha clase.
+            private NombreDeMiClaseEspecial variable1;
+
+            
