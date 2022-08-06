@@ -8,26 +8,48 @@
 public class VisorDeReloj
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private VisorDeNumeros horas;
+    private VisorDeNumeros minutos;
+    private String cadVisor;
+
+    
 
     /**
      * Constructor for objects of class VisorDeReloj
      */
     public VisorDeReloj()
     {
-        // initialise instance variables
-        x = 0;
+        horas = new VisorDeNumeros(24);
+        minutos = new VisorDeNumeros(60);
+        actualizarVisor();
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    
+    public void ticTac()
     {
-        // put your code here
-        return x + y;
+        minutos.incrementar();
+        
+        if (minutos.getValor() == 0) {
+            horas.incrementar();
+        }
+        actualizarVisor();
     }
+    
+    
+    public void ponerEnHora(int hora, int minuto) {
+        horas.setValor(hora);
+        minutos.setValor(minuto);
+        actualizarVisor();
+    }
+    
+    public String getHora()
+    {
+        return cadVisor;
+    }
+    
+    public void actualizarVisor(){
+        cadVisor = horas.getValorDelVisor() + ":" + minutos.getValorDelVisor();
+    }
+    
+    
+    
 }

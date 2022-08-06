@@ -251,4 +251,80 @@ CAPITULO 3: Interacción de objetos.
         Una clase define tipos, esto quiere decir que el nombre de una clase puede ser usado para definir el tipo de una variable y estas variables que son de un tipo de clase pueden almacenar objetos de dicha clase.
             private NombreDeMiClaseEspecial variable1;
 
-            
+        El tipo de un campo especifica la naturaleza del valor que puede almacenar dicho campo.
+
+    
+    3.6 Comparación de diagramas de clases con diagramas de objetos.
+        El diagrama de clases muestra la vista estatica de un programa. Muestra la relacion entre las clases de la aplicacion.
+        El diagrama de objetos muestra la vista dinamica de un programa. Da información sobre los objetos en tiempo de ejecución. Muestra las relaciones entre objetos en un momento dado de la ejecución de la aplicacion.
+        Las variables de tipo objeto no almacenan los valores en si, sino solo la referencia al objeto, y este a su ves es quien contiene el valor. El objeto al que se hace la referencia se almacena fuera del objeto que hace la referencia.
+        
+
+    3.7 Tipos Primitivos y tipos objetos
+        Los tipos primitivos son aquellos que no son objetos. Los más comunes son int, float, double, long, char, boolean. Además no poseen métodos.
+        Estos tipos primitivos se predefinen en el lenguaje java
+        Los tipos objeto se definen mediante clases, algunas de estas se definen por el sistema de java estandar como el caso de String.
+        Los primitivos se almacenan directamente en una variable, los objetos almacenan una referencia al objeto.
+
+
+    3.8 El codigo del VisorDeReloj
+        Analizar codigo de muestra visor-de-reloj
+
+
+        3.8.1 Clase VisorDeNumeros
+            Operadores logicos 
+            &&
+            ||
+            !
+            O exclusivo
+            Disyuncion excluyente
+
+            "Cadena" 
+            + Concatenacion de cadenas
+
+        3.8.2 Contatenacion de cadenas
+            + Significa concatenacion o suma, dependiendo del tipo de sus operandos.
+
+        3.8.3 El operador modulo
+            Devuelve el residuo de la división de dos operandos numerador y denominador
+                8 % 3   -> 8 mod 3  = 2
+                El 3 cabe dos veces y el residuo es 2.
+                n % 5 : Sus posibles valores son 0, 1, 2, 3, 4
+                n % m : Si son variables enteras sus posibles valores son valores entre n y m
+                    5 % 9 = 5
+                    8 % 9 = 8
+                    9 % 9 = 0
+                    1 % 9 = 1
+                    etc
+
+        3.8.4 La clase VisorDeReloj
+            Crea dos objetos de clase VisorDeNumeros
+            Un String cadena de visor cadVisor
+            Un constructor que inicializa en 24 las horas y en 60 los minutos (00:00)
+            Un metodo ticTac para incrementar minutos y horas.
+
+    3.9 Objetos que crean objetos
+        Se declara un objeto de algun tipo de clase
+            private VisorDeNumeros horas;
+
+        Se crea un objeto con la palabra new
+            horas = new VisorDeNumeros(24); // Se ejecuta el constructor de VisorDeNumeros con el parametro actual (24)
+
+            el encabezado del constructor de VisorDeNumeros
+
+                public VisorDeNumeros(int limiteMaximo) // Parametro formal (limiteMaximo)
+
+
+        Ejercicio 3.24
+            public Editor(Fichero name, int position);
+
+        Ejercicio 3.25
+            private Rectangulo ventana;
+            ventana = new Rectangulo(int alto, int ancho);
+
+    3.10 Constructores múltiples
+        
+
+
+
+
