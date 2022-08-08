@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=limiteMaximo
+comment0.target=VisorDeNumeros(int)
+comment0.text=\nConstructor\ for\ objects\ of\ class\ VisorDeNumeros\n\n
+comment1.target=int\ getValor()
+comment2.params=nuevoValor
+comment2.target=void\ setValor(int)
+comment3.target=String\ getValorDelVisor()
+comment4.target=void\ incrementar()
+numComments=5

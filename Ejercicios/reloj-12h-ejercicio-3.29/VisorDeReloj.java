@@ -19,7 +19,7 @@ public class VisorDeReloj
      */
     public VisorDeReloj()
     {
-        horas = new VisorDeNumeros(12);
+        horas = new VisorDeNumeros(24);
         minutos = new VisorDeNumeros(60);
         actualizarVisor();
     }

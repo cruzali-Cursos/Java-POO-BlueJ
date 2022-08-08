@@ -323,7 +323,33 @@ CAPITULO 3: Interacción de objetos.
             ventana = new Rectangulo(int alto, int ancho);
 
     3.10 Constructores múltiples
-        
+        Sobrecarga: Puede darse en un constructor o método. 
+            Las clases pueden contener mas de un constructor / metodo siempre que tengan distintos conjuntos de parametros.
+
+
+    3.11 Llamadas a métodos
+        Si llamamos a un método dentro de la misma clase se dice que es una llamada a un método interno.
+
+            nombreDelMetodo (lista-parametros)
+
+        3.11.2 Llamadas a metodos externos
+            Se usa la notación de punto para la * llamada a método externo *
+
+            objeto.nombreDelMetodo (lista-parametros)
+
+
+            Ejercicio 3.28
+                p1.imprimir (resumenClientes, false);
+                p1.imprimir (listaProductos, true);
+
+                p1.consultarEstado (1);
+                p1.consultarEstado (3);
+
+        3.11.3 Resumen del visor de reloj
+            Se hace uso de métodos como ticTac sin importar como se realiza la tarea, en los proyectos reales es similar, solo se definen la signatura de las clases y lo que hará cada clase como comun acuerdo. Luego una persona podría implementar los métodos mientras que otra persona hace uso de ellos.
+
+            El conjunto de métodos que estan disponibles para otro objeto se denomina su INTERFAZ
+
 
 
 
