@@ -19,7 +19,7 @@ public class VisorDeReloj
      */
     public VisorDeReloj()
     {
-        horas = new VisorDeNumeros(24);
+        horas = new VisorDeNumeros(12);
         minutos = new VisorDeNumeros(60);
         actualizarVisor();
     }
@@ -47,9 +47,11 @@ public class VisorDeReloj
     }
     
     public void actualizarVisor(){
-        cadVisor = horas.getValorDelVisor() + ":" + minutos.getValorDelVisor();
-    }
-    
-    
-    
+        if (Integer.parseInt(horas.getValorDelVisor()) <= 12) {
+            cadVisor = horas.getValorDelVisor() + "*" + minutos.getValorDelVisor();
+        } else {
+            cadVisor = horas.getValorDelVisor() + ":" + minutos.getValorDelVisor();
+        }
+        
+    }        
 }

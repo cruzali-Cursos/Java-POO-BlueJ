@@ -1,9 +1,15 @@
 #BlueJ class context
-comment0.target=VisorDeReloj()
-comment0.text=\nConstructor\ for\ objects\ of\ class\ VisorDeReloj\n\n
-comment1.target=void\ ticTac()
-comment2.params=hora\ minuto
-comment2.target=void\ ponerEnHora(int,\ int)
-comment3.target=String\ getHora()
-comment4.target=void\ actualizarVisor()
-numComments=5
+comment0.target=VisorDeReloj
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ VisorDeReloj\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=VisorDeReloj()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ VisorDeReloj\r\n
+comment2.params=
+comment2.target=void\ ticTac()
+comment3.params=hora\ minuto
+comment3.target=void\ ponerEnHora(int,\ int)
+comment4.params=
+comment4.target=java.lang.String\ getHora()
+comment5.params=
+comment5.target=void\ actualizarVisor()
+numComments=6

@@ -1,10 +1,16 @@
 #BlueJ class context
-comment0.params=limiteMaximo
-comment0.target=VisorDeNumeros(int)
-comment0.text=\nConstructor\ for\ objects\ of\ class\ VisorDeNumeros\n\n
-comment1.target=int\ getValor()
-comment2.params=nuevoValor
-comment2.target=void\ setValor(int)
-comment3.target=String\ getValorDelVisor()
-comment4.target=void\ incrementar()
-numComments=5
+comment0.target=VisorDeNumeros
+comment0.text=\r\n\ Muestra\ un\ par\ de\ d\u00EDgitos\ que\ pueden\ ser\ horas\ o\ minutos.-\r\n\ Puede\ mostrar\ valores\ desde\ cero\ hasta\ determinado\ numero.\ Se\ puede\ especificar\ un\ l\u00EDmite\r\n\ al\ cerar\ el\ visor.\ El\ rango\ va\ de\ cero\ (inclusive)\ hasta\ el\ l\u00EDmite\ -1\r\n\ @author\ Michael\ K\u00F6lling\ and\ David\ J.\ Barnes\r\n\ \r\n\ ali.cruz@me.com\ -\ 31/07/2022\r\n
+comment1.params=limiteMaximo
+comment1.target=VisorDeNumeros(int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ VisorDeNumeros\r\n\ inicializo\ horas\ y\ minutos\ a\ cero.\r\n
+comment2.params=
+comment2.target=int\ getValor()
+comment2.text=\r\n\ Obtengo\ el\ valor\ del\ visor\ horas\ /\ minutos.\r\n
+comment3.params=nuevoValor
+comment3.target=void\ setValor(int)
+comment4.params=
+comment4.target=java.lang.String\ getValorDelVisor()
+comment5.params=
+comment5.target=void\ incrementar()
+numComments=6
