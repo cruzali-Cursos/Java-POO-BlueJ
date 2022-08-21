@@ -8,4 +8,5 @@ comment2.params=nuevoValor
 comment2.target=void\ setValor(int)
 comment3.target=String\ getValorDelVisor()
 comment4.target=void\ incrementar()
-numComments=5
+comment5.target=int\ getLimite()
+numComments=6

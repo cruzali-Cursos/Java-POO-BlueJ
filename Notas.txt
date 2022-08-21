@@ -350,6 +350,43 @@ CAPITULO 3: Interacción de objetos.
 
             El conjunto de métodos que estan disponibles para otro objeto se denomina su INTERFAZ
 
+        Ejercicios 3.29 y 3.30
+
+    3.12 Otro ejemplo de interaccion de objetos.
+        El debugger (depurador) puede ser una herramienta muy importante a la hora de analizar de forma profunda un proyecto de software. La lectura de código es escencial en la vida de un programador.
+        Un depurador permite ejecutar paso a paso una aplicacion para examinar el valor de las variable.
+        Un caso famoso del origen del termino BUG data de 1945 en la Mark II por Grace Murray Hopper.
+
+        3.12.1 El ejemplo del sistema de correo electrónico
+            El servidor aloja clientes de correo electronico (usuarios).
+            Los clientes envian mensajes ha diferentes usuarios (clientes de email)
+
+        3.12.2 La palabra clave this
+            Se usa cuando existe una sobrecarga de nombres, se da cuando entidades diferentes usan el mismo nombre de variables. Si existen 3 campos que se llaman igual a 3 parametros entonces existen 6 variables en total y esto no genera problemas ya que son independientes unas de las otras.
+            En java la especificación dice que si se hace uso de una variable con nombre similar en el campo y en el parametro entonces se usa la mas declaración mas cercana encerrada en un bloque.
+
+                private int edad = 0;
+                private String nombre = "";
+
+                Persona persona1 = new Persona(34, "Ali");
+                public void Persona(int edad, String nombre) {
+                    // Se tomaran 34 y Ali.
+                    System.out.println("Mi nombre es " + nombre + " y mi edad es " + edad);
+                }
+
+            this hace referencia al objeto actual. De esta forma accedemos a los campos y no a los parametros.
+            Generalmente se hace uso de nombres identicos para dar mejor legibilidad al codigo.
+
+    3.13 Usar el depurador
+        
+
+
+
+
+
+
+
+
 
 
 

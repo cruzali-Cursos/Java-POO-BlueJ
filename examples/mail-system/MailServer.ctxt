@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=MailServer()
+comment0.text=\nConstruct\ a\ mail\ server.\n\n
+comment1.params=who
+comment1.target=int\ howManyMessages(String)
+comment1.text=\n@return\ How\ many\ messages\ are\ waiting\ for\ the\ given\ user.\n@param\ who\ The\ user\ to\ check\ for.\n\n
+comment2.params=who
+comment2.target=MailItem\ getNextMailItem(String)
+comment2.text=\nReturn\ the\ next\ message\ for\ who.\ Return\ null\ if\ there\nare\ none.\n@param\ who\ The\ user\ requesting\ their\ next\ message.\n\n
+comment3.params=item
+comment3.target=void\ post(MailItem)
+comment3.text=\nAdd\ the\ given\ message\ to\ the\ message\ list.\n@param\ item\ The\ mail\ item\ to\ be\ stored\ on\ the\ server.\n\n
+numComments=4

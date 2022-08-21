@@ -12,6 +12,7 @@ public class VisorDeReloj
     private VisorDeNumeros minutos;
     private String cadVisor;
 
+
     
 
     /**
@@ -19,10 +20,8 @@ public class VisorDeReloj
      */
     public VisorDeReloj()
     {
-        horas = new VisorDeNumeros(13);
+        horas = new VisorDeNumeros(24);
         minutos = new VisorDeNumeros(60);
-        // Inicializo las horas en 1 para mostrar la hora en 01 al inicio en cadVisor
-        horas.setValor(1);
         actualizarVisor();
     }
     
@@ -31,11 +30,8 @@ public class VisorDeReloj
         minutos.incrementar();
         
         if (minutos.getValor() == 0) {
-            horas.incrementar();
-            if (horas.getValor() == 0) {
-                horas.setValor(1);
-            }
-            
+//            horasTmp = horas.getValor();
+            horas.incrementar();            
         }
         actualizarVisor();
     }
@@ -53,8 +49,9 @@ public class VisorDeReloj
     }
     
     public void actualizarVisor(){
-        if (Integer.parseInt(horas.getValorDelVisor()) <= 12)
-            cadVisor = horas.getValorDelVisor() + ":" + minutos.getValorDelVisor();
-        
-    }        
+        if (Integer.parseInt(horas.getValorDelVisor()) >= 0 && Integer.parseInt(horas.getValorDelVisor()) <= 12)
+            cadVisor = (Integer.parseInt(horas.getValorDelVisor()) % 13) + ":" + minutos.getValorDelVisor() + " AM";
+         else 
+            cadVisor = (Integer.parseInt(horas.getValorDelVisor()) % 13) + ":" + minutos.getValorDelVisor() + " PM";
+    }
 }

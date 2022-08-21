@@ -39,18 +39,22 @@ public class VisorDeNumeros
     }
     
        // Devuelve el numero actual del visor, como una cadena de dos dígitos. Si es un valor menor a 10, se completa con un cero.
-    public String getValorDelVisor() {
+    public String getValorDelVisor() {        
         if (valor < 10) {
             return "0" + valor;
         } else {
             return valor + "";
         }
-    }    
+    }
          
     // Incrementa el valor del visor en uno, lo vuelve a cero si se alcanza el límite
     public void incrementar() {
         valor = ++valor % limite; 
-    }   
+    }
+    
+    public int getLimite() {
+        return limite;
+    }
 
 
 }
