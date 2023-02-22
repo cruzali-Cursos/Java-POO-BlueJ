@@ -378,8 +378,106 @@ CAPITULO 3: Interacción de objetos.
             Generalmente se hace uso de nombres identicos para dar mejor legibilidad al codigo.
 
     3.13 Usar el depurador
+        Ejercicio 3.33
+
+        3.13.1 Establecer puntos de interrupción.
+
+        3.13.2 Paso a paso
+
+        3.13.3 Entrar en los métodos Step Into
+
+
+    3.14 Revisión de llamadas a métodos
+        Los objetos pueden llamar a métodos de otros objetos.
+
+    3.15 Resumen
+        Se ha estudiado cómo se puede dividir un problema en subproblemas, podemos identificar componentes en aquellos objetos que queremos modelar.
+        Los objetos pueden crear otros objetos y se pueden invocar sus métodos unos con otros.
+        Podemos usar diagramas de papel y lapíz y usar depuradores para investigar cómo se ejecuta una aplicación.
         
 
+CAPITULO 4: Agrupar Objetos
+    En este capítulo, se abordará la forma de introducir algunas maneras en que se pueden agrupar los objetos para formar colecciones y la clase ArrayList se trata como un ejemplo de colecciones de tamaño flexible y al uso de los vectores como colecciones de tamaño fijo.
+
+    4.1 Agrupar objetos en colecciones de tamaño flexible
+        Se requieren formas de agrupar objetos de forma flexible, en donde el tamaño sea dinamico y no se ate a un tamaño predefinido y estatico.
+
+    4.2 Una agenda personal
+        Algunos alcances
+
+    4.3 Una primera vista a las bibliotecas de clases
+        Las colecciones de objetos son objetos que pueden almacenar un numero arbitario de otros objetos.
+        Los lenguajes OO frecuentemente estan acompañados de bibliotecas de clases. Éstas tienen, comunmente cientos o miles de clases diferentes las cuales son de ayuda, en java se les conoce como packages.
+        ArrayList es un ejemplo de una clase coleccion.
+
+            4.3.1 Ejemplo de uso de una biblioteca.
+                Para obtener acceso a una clase de una biblioteca se usa import java.util.ArrayList;
+                Se ubican siempre antes del comienzo de la declaracion de la clase.
+                
+                Al usar colecciones se deben especificar dos tipos: el propio de la coleccion y el tipo de elemento que se planea guardar.
+
+                private ArrayList<String> notas; // Declarar campo notas
+                notas = new ArrayList<String>(); //
+
+
+    4.4 Estructuras de objetos con coleccione
+        Los elementos (objetos o de otro tipo), pueden ir agregandose a la coleccion, esto aumentando su capacidad interna tanto como se requiera.
+        Mantiene su cuenta privada de la cantidad de elementos que tiene almacenados.
+        Mantiene el orden de los elementos que se agregan.
+
+
+    4.5 Clases genéricas
+        Requieren que se especifique un segundo tipo como parametro cuando se usa para declarar campos u otras variables, a estas se les llama clases genericas.
+        Se puede especificar un ArrayList de String, un ArrayList de Personas, etc, etc. y se pueden usar en declaraciones de parametros, campos y tipos de retorno.
+
+
+            Ejercicio 4.2:
+
+            private ArrayList<Libro> biblioteca;
+
+
+    4.6 Numeración dentro de las colecciones
+        Los datos que se almacenan en colecciones tienen una numeración implicita y comienza en cero.
+        Se le conoce como su indice y comienza desde cero.
+        Hay que asuegurarse que el indice a que se intenta acceder sea valido. Sin caer en un desbordamiento.
+
+            Ejercicio 4.3 Si una coleccion almacena 10 objetos, el metodo size retorna 10.
+                R: 10
+
+            Ejercicio 4.4: 
+                elementos.get(4);
+
+            Ejercicio 4.5
+                R: 14
+
+            Ejercicio 4.6
+                notas.Add(cita);
+
+    4.7 Eliminar un elemento de una coleccion
+        Con el método remove tomando como parametro el índice se puede eliminar un objeto.
+        Al eliminar un elemento de una colección se modifican los valores de los índices, esto quiere decir que si se elimina un elemento de un índice bajo, entonces todos los elementos se recorren una posicion a la izquierda para llenar el espacio vacio.
+        Sucede lo mismo cuando se ingresan elementos entre elementos en una coleccion.
+
+
+            Ejercicio 4.7: notas.Remove(2);
+            Ejercicio 4.8: 5
+            Ejercicio 4.9 
+                R: notas.remove(indice);
+
+
+    4.8 Procesar una coleccion completa
+    
+
+
+
+
+
+
+
+    
+        pag 93
+        
+        
 
 
 
