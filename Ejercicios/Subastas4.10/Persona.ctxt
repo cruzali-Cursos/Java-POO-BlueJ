@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=nombreOfertante
+comment0.target=Persona(String)
+comment0.text=\nCrea\ objeto\ Persona\ \n@param\ nombreOfertante\ Una\ nueva\ persona\ que\ oferta.\n\n
+comment1.target=String\ getNombrePersonaOfertante()
+numComments=2

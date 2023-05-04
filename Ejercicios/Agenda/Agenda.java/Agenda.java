@@ -22,20 +22,21 @@ public class Agenda
 {
 // Espacio para almacenar un número arbitrario de notas.
     private ArrayList<String> notas;
+
     /**
      * Realiza cualquier inicialización que se requiera para la agenda.
      * */
      public Agenda()
-{
-notas = new ArrayList<String>();
-}
+     {
+         notas = new ArrayList<String>();
+     }
 /**
 * Almacena una nota nueva en la agenda.
 * @param nota La nota que se almacenará.
 */
 public void guardarNota(String nota)
 {
-notas.add(nota);
+    notas.add(nota);
 }
 /**
 * @return El número de notas que tiene actualmente
@@ -43,7 +44,8 @@ la agenda.
 */
 public int numeroDeNotas()
 {
-return notas.size();
+    System.out.println("Total de notas: " + notas.size());
+    return notas.size();
 }
 /**
 * Muestra una nota.
@@ -52,24 +54,55 @@ mostrará.
 */
 public void mostrarNota(int numeroDeNota)
 {
-if(numeroDeNota < 0) {
-// No es un número de nota válido, por lo tanto no se hace nada.
-}
-else if(numeroDeNota < numeroDeNotas()) {
-// Es un número válido de nota, por lo tanto se la puede mostrar.
-System.out.println(notas.get(numeroDeNota));
-}
-else {
-// No es un número válido de nota, por lo tanto no se hace nada.
-}
+    if(numeroDeNota <= 0 || numeroDeNota > notas.size()) {
+        // No es un número de nota válido, por lo tanto no se hace nada.
+        System.out.println("Numero de nota no es valido. Indice: " + numeroDeNota);
+    }
+    else if(numeroDeNota <= notas.size() && numeroDeNota >= 1) {
+        // Es un número válido de nota, por lo tanto se la puede mostrar.
+        System.out.println("[" + numeroDeNota + "]" +notas.get(numeroDeNota-1));
+    }
+    else {
+        // No es un número válido de nota, por lo tanto no se hace nada.
+    }
 }
 
 public void eliminarNota(int numeroDeNota) 
 {
-    if (numeroDeNota < numeroDeNotas() && numeroDeNota >= 0)
+    numeroDeNota -= 1;
+    if (numeroDeNota < notas.size() && numeroDeNota >= 0)
     {
-        notas.remove(numeroDeNota);    
+        notas.remove(numeroDeNota);
+        System.out.println("Nota correctamente eliminada.");
+    } else {
+        System.out.println("Error al intentar eliminar una nota. Indice fuera de rango");
     }
+}
+
+public void mostrarTodasLasNotas()
+{
+    int totalNotas = notas.size();
+    if (totalNotas >= 0)
+    {
+        int i = 0;
+        int j = 1;
+        while (i < totalNotas)
+        {
+            System.out.println("[" + j++ + "]: " + notas.get(i++));
+        }
+    } else {
+        System.out.println("No hay notas que mostrar");
+    }
+}
+
+public String BuscarCadena(String cadena) {
+    for(String nota : notas) {
+        if (nota.contains(cadena)) {
+            System.out.println("Coincidencia: " + nota);
+            //return nota;            
+        }
+    }    
+    return null;
 }
 
 }

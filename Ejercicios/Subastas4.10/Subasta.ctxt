@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Subasta()
+comment0.text=\nCrea\ una\ nueva\ subasta.\n\n
+comment1.params=descripcion
+comment1.target=void\ ingresarLote(String)
+comment1.text=\nIngresa\ un\ nuevo\ lote\ a\ la\ subasta.\n@param\ descripcion\ La\ descripci\u00F3n\ del\ lote.\n\n
+comment2.target=void\ mostrarLotes()
+comment2.text=\nMuestra\ la\ lista\ de\ todos\ los\ lotes\ de\ esta\ subasta.\n\n
+comment3.params=numeroDeLote\ oferta
+comment3.target=void\ ofertarPara(int,\ Oferta)
+comment3.text=public\ void\ ofertarPara(int\ numeroDeLote,\ Persona\ persona,\ long\ valor)\n{\n//personas.add(persona);\n\nLote\ loteElegido\ \=\ getLote(numeroDeLote);\nif(loteElegido\ \!\=\ null)\ \n{\nOferta\ oferta\ \=\ new\ Oferta(persona,\ valor);\n//boolean\ exito\ \=\ loteElegido.ofertarPara(new\ Oferta(persona,\ valor));\nboolean\ exito\ \=\ loteElegido.ofertarPara(oferta);\nif(exito)\ \n{\nSystem.out.println("La\ oferta\ para\ el\ lote\ n\u00FAmero\ "\ +\ numeroDeLote\ +\ "\ result\u00F3\ exitosa.");\n}\nelse\ \n{\n//\ Informa\ cu\u00E1l\ es\ la\ mayor\ oferta\nOferta\ ofertaMaxima\ \=\ loteElegido.getOfertaMaxima();\nSystem.out.println("El\ lote\ n\u00FAmero\:\ "\ +\ numeroDeLote\ +\ "\ ya\ tiene\ una\ oferta\ de\:\ "\ +\ ofertaMaxima.getValor());\n}\n}\ \ \ \ \ \ \ \ \n}\n
+comment4.params=numeroDeLote
+comment4.target=Lote\ getLote(int)
+comment4.text=\nDevuelve\ el\ lote\ de\ un\ determinado\ n\u00FAmero.\nDevuelve\ null\nsi\ no\ existe\ un\ lote\ con\ este\ n\u00FAmero.\n@param\ numeroDeLote\ El\ n\u00FAmero\ del\ lote\ a\nretornar.\n\n
+comment5.target=void\ cerrarSubasta()
+comment6.target=ArrayList\ getNoVendidos()
+comment7.params=noLote
+comment7.target=void\ deleteLote(int)
+numComments=8

@@ -466,17 +466,192 @@ CAPITULO 4: Agrupar Objetos
 
 
     4.8 Procesar una coleccion completa
+        El ArrayList comienza en la posicion cero
+
+        4.8.1 El ciclo for-each
+            Ciclo de repetición "Para cada elemento en la coleccion hacer:"
+            for (TipoDelElemento elemento : coleccion) {
+                cuerpo del ciclo
+            }
+
+            Ejercicios:
+            4.12 
+                public void MostrarNotas() 
+                {
+                    for (int i = 0; i < numeroDeNotas(); i++)
+                    {
+                        System.out.println(notas.get(i));
+                    }
+                }
+
+            4.13 OK
+
+            4.14 Usar depurador
+
+            4.15 Validar el índice con el cual trabajar para no generar error index of bound
+
+        4.8.2 El ciclo while
+            Se ejecuta hasta que la condición sea falsa
+
+            while (condición del ciclo) {
+                cuerpo del ciclo
+            }
+            Cada que se ejecuta el cuerpo del ciclo la condición se vuelve a evaluar y si es falsa entonces se salta el cuerpo del ciclo.
+
+            Al usar while en lugar de foreach tenemos la ventaja de no necesitar iterar sobre una coleccion, y la otra ventaja es que no necesariamente debemos recorrer toda la coleccion.
+
+            Ejercicios
+            4.16 
+                int i = 10;
+                while (i <= 95) {
+                    System.out.printl(i);
+                    i = i + 5;
+                }
+
+            4.17
+                private int sumar(int a, int b) {
+                    int resSuma = 0;
+                    if (a < b) {
+                        int puntero = a + 1;
+                        while (a < b) {
+                            resSuma += puntero;
+                        }
+                        puntero++;
+                    }                    
+                }
+
+                4.18
+                    private bool EsPrimo(n) {
+                        bool res = true;
+
+                        while (n % 2 == 0) {
+                            res = false;                            
+                        }
+
+                        return res;
+                    }
+
+
+            Buscar una cadena con el método Containts.
+
+                4.19 Implemente el método buscar.
+
+                4.20 Modifique el método imprimir notas.
+
+                4.21 Ejecición del método buscar.
+
+                4.22 Manejo de índices en un array
+
+
+        4.8.3 Recorrer una colección:
+            Variante para recorrer colecciones, esto con la ayuda de un ciclo while y un objeto iterador para mantener el rastro de la posicion de en la lista.
+            El método iterator de ArrayList devuelve un objeto iterator y éste provee dos métodos para recorrer la colección: hasNext y next.
+
+            Iterator<TipoDelElemento> it = miColeccion.iterator();
+
+            while (it.hasNext()) {
+                Invocar it.next() para obtener el siguiente elemento
+                Hacer algo con dicho elemento
+            }
+
+            hasNext mantiene el rastro de los elementos recorridos.
+
+
+        4.8.4 Comparar acceso mediante índices e iteradores
+            Podemos usar alguna de las tres maneras diferentes de recorrer un ArrayList
+                for-each
+
+                get
+                int indice = 0;
+                while(indice < notas.size()) {
+                    System.out.println(notas.get(indice));
+                    indice ++;
+                }
+
+                Iterator
+
+
+        4.9 Resumen del ejemplo agenda:
+            Con el objeto ArrayList podemos agregar un numero variable de elementos sin preocuparnos por conocer el numero de manera inicial.
+            El ArrayList mantiene automáticamente el registro de la cantidad de elementos que contiene.
+            Podemos acceder a sus elementos por un índice o podemos recorrerla con el objeto Iterator.
+
+            Ejercicios:            
+                4.23 Almacenar objetos socios en una coleccion.
+                import java.util.ArrayList;
+                private ArrayList<Socio> members;
+                        public Constructor() {
+                        members = new ArrayList<>();
+                        }
+
+                4.24 Devolver numero de socios:
+                    return members.size();
+
+
+                4.25 Representación de un socio
+                            Membership member = new Membership(nombre, mes, year);        
+                            members.add(member);
+
+
+
+
+        4.10 Otro ejemplo: un sistema de subastas.
+            En una subasta se ofrecen productos (lotes identificados por un unico numero) y la gente puede ofertar por cada lote, esto durante un tiempo limitado. Al finalizar el tiempo se lleva el lote la persona que mas dinero ofertó. Si nadie oferta el lote se queda para futuras subastas.
+
+            4.10.1 La clase Lote
+
+
+            4.10.2 La clase Subasta
+
+
+            4.10.3 Objetos anónimos
+                Se dice que es objeto anónimo porque no se le asigna un nombre.
+                Podria usarse para evitar declarar variables con uso tan limitado como el siguiente ejemplo:
+                * Para usar nuevoLote en varios lugares dentro del método.
+                Lote nuevoLote = new Lote(numeroDeLoteSiguiente, descripcion);
+                lotes.add(nuevoLote);
+
+                * Unico uso
+                lotes.add(new Lote(numeroDeLoteSiguiente, descripcion));
+
+                Ejercicio 4.26
+                    Ok, realizado también en NetBeans
+                    Lista de objetos. 
+                    Al crear un objeto llamado objetoA y este objeto tiene un campo llamado objetoB con sus respectivas propiedades y luego desde el objetoA se llama a una de las propiedades del objetoB...
+
+                    objetoB objB = new objetoB();
+                    objB = objetoA.getObjetoB();
+                    String pripiedadValue = objB.propiedad1; // Da error.
+
+                    ) 
+
+                Ejercicio 4.27
+                    Distinguir los lotes que no cuentan con ofertas para añadirlos a un ArrayList.
+
+
+                Ejercicio 4.28
+                    Al eliminar un lote y luego intentar visualizar el lote eliminado, entonces se generaría una respuesta incorrecta por parte del sistema ya que si se elimina el lote no 1 y luego se intenta visualizar el lote numero 1, realmente el sistema retornará el lote no 2. El array list recorre los elementos para rellenar los espacios vacios.
+
+
+                Ejercicio 4.29
+                    [1][2][3][4][5]  [Lotes]
+                    [0][X][2][3][4]  [Indices]
+                    [0][1][2][3]     [Resultado luego de eliminar lote 2 con indice 1]
+
+
+                Varios ejercicios pendientes
+
+
+            4.10.4 Usar colecciones
+
+
+
     
-
-
-
-
-
-
-
-    
-        pag 93
+        pag 109
         
+
+        https://github.com/cruzali/BlueJ
+            forked from 100141821/BlueJ
         
 
 

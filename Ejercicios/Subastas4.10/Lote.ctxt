@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=numeroLote\ descripcion
+comment0.target=Lote(int,\ String)
+comment0.text=\nIntento\ de\ ofertar\ para\ este\ lote.\ Una\ oferta\nexitosa\ debe\ tener\ un\ valor\ mayor\ que\ cualquier\n\noferta\ existente.\n@param\ oferta\ Una\ nueva\ oferta.\n@return\ true\ si\ es\ exitosa,\ falso\ en\ caso\ contrario\n\n
+comment1.params=nuevaOferta
+comment1.target=boolean\ ofertarPara(Oferta)
+comment2.target=Oferta\ getOfertaMaxima()
+comment3.target=int\ getNumeroLote()
+comment4.target=Persona\ getOfertante()
+numComments=5
